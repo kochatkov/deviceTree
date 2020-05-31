@@ -1,0 +1,59 @@
+body,
+p {
+  margin: 0;
+  background: lightskyblue;
+}
+
+.App {
+  color: white;
+  padding: 50px;
+
+  &__components-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.buttons {
+  display: block;
+  background: lightblue;
+  color: white;
+  height: 50px;
+  width: 200px;
+  border: 1px solid white;
+  outline: none;
+  margin: 5px auto;
+  transition: 0.3s;
+  &:hover {
+    background: white;
+    color: lightblue;
+    cursor: pointer;
+  }
+
+    &__container {
+     grid-column-start: 3;
+    }
+}
+
+.card__reading {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  border: 1px solid white;
+  padding: 10px 50px;
+}
+
+.module {
+  display: grid;
+
+  &__cash-dispenser {
+    grid-template-rows: 25px 25px 25px;
+  }
+}
+
+.input {
+  background: lightskyblue;
+  color: white;
+  border: 1px solid white;
+  outline: none;
+  width: 300px;
+}
